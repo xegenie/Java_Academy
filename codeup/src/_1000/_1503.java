@@ -31,28 +31,30 @@ public class _1503 {
 		int arr[] = new int[n];
 		
 			for (int i=0; i < arr.length; i++) {
-				int temp = a;
-				if (i%2 == 0) {
-				for (int j = arr.length-1; j >= 0; j--) {
-					temp++;
-					System.out.print(temp +" ");
-				}
+				int temp = 0;
+				
+				if (i%2 == 1) {
+					for (int j = arr.length-1; j >= 0; j--) {
+						temp = a;
+						a++;
+						System.out.print(temp +" ");
+					}
+					System.out.println();
 				}
 				else {
 					for (int j = arr.length-1; j >= 0; j--) {
-				
-						temp++;
+						a++;
+						temp = a;
 						System.out.print(temp +" ");
-
+					}
+					System.out.println();		
+					
 				}
-				System.out.println();		
-				
-			}
 				sc.close();
 			}
 	}
 }
-	
+
 
 
 
