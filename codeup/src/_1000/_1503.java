@@ -26,22 +26,30 @@ public class _1503 {
 		
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
+		
 		int arr[][] = new int[n][n];
 		int a = 1;
 		
-			for (int i=0; i < arr.length; i++) {
-					for (int j = arr.length-1; j >= 0; j--) {
-						System.out.print(a+" ");
-						a++;
-					}
-
-				System.out.println();		
+		for (int i=0; i < arr.length; i++) {
+			if (i%2==0) {
+				for (int j = 0; j < arr[i].length; j++) {
+					System.out.print(a+" ");
+					a++;	
+				}
 			}
-			sc.close();
+			else { 
+				for (int j = arr[i].length-1; j >= 0; j--) {
+					System.out.print(a+" ");
+					a++;
+				}
+			}
+
+				
+			System.out.println();
+		}
+		sc.close();
 	}
 }
-
-
 
 
 
