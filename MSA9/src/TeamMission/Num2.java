@@ -21,7 +21,6 @@ import java.util.Scanner;
 2+4+6+8+10=30
 1 2 5 10
 */
-
 public class Num2 {
 	
 	public static void main(String[] args) {
@@ -30,23 +29,31 @@ public class Num2 {
 		int sum1 = 0;
 		int sum2 = 0;
 		
+		//홀수
 		for (int i = 1; i <= N; i++) {
 			if (i%2 == 1) {
-				System.out.print(i+"+");
+				System.out.print(i);
 				sum1 += i;
+			}
+			else if (i<N) {
+				System.out.print("+");
 			}
 		}
 		System.out.println("="+sum1);
 		
+		//짝수
 		for (int i = 1; i <= N; i++) {
 			if (i%2 == 0) {
-				System.out.print(i+"+");
+				System.out.print(i);
 				sum2 += i;
+			}
+			else if (1 < i && i < N) {
+				System.out.print("+");
 			}
 		}
 		System.out.println("="+sum2);
 		
-
+		//약수
 		int divisor = 1;
 		
 		for (int i = 0; i < N; i++) {

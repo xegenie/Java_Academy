@@ -22,6 +22,7 @@ package Day01;
 // 잘라내기 : ctrl + X
 // 뒤로가기 : ctrl + Z
 // 앞으로가기 : ctrl + Y
+// 줄맞춤, 들여쓰기 : ctrl + shift + F
 
 public class 단축키 {
 

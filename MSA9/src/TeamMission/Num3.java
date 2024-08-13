@@ -10,10 +10,10 @@ public class Num3 {
 	public static void main(String[] args) {
 		
 		for (int i = 1; i <= 100; i++) {
-			int result = 0;
+			int result = 0; //초기화
 			
-			int a = i/10;
-			int b = i%10;
+			int a = i/10;	//10의자리
+			int b = i%10;	//1의자리
 			
 			if (a == 3 || a == 6 || a == 9) {
 				result++;
@@ -33,7 +33,6 @@ public class Num3 {
 			} else {
 				
 				System.out.println(i);
-				
 			}
 		}
 		
