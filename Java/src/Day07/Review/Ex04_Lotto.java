@@ -23,8 +23,17 @@ public class Ex04_Lotto {
 		// 1~45 사이의 랜덤수 6개를 배열에 지정하시오.
 		System.out.println("arr[6]");
 		int arr[] = new int[6];
+		
+		// 중복제거, 오름차순 정렬
 		for (int i = 0; i < arr.length; i++) {
-			arr[i]=(int)(Math.random() * 45) + 1;
+			int r = (int)(Math.random() * 45) + 1;
+			arr[i] = r;
+			
+			for (int j = i-1; j >= 0; j--) {
+				if (r == arr[j]) {
+					i--;
+				}
+			}
 		}
 		
 		for (int i : arr) {
