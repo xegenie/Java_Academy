@@ -23,28 +23,27 @@ N이 5라면 다음과 같이 출력한다.
 public class _1503 {
 	
 	public static void main(String[] args) {
-		
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
-		
-		int arr[][] = new int[n][n];
+		int arr[][] = new int[n][n];			// 2차원 배열
 		int a = 1;
-		
-		for (int i=0; i < arr.length; i++) {
-			if (i%2==0) {
-				for (int j = 0; j < arr[i].length; j++) {
-					System.out.print(a+" ");
-					a++;	
-				}
-			}
-			else { 
-				for (int j = arr[i].length-1; j >= 0; j--) {
-					System.out.print(a+" ");
-					a++;
-				}
-			}
 
-				
+		for (int i = 0; i < n; i++) {
+			if (i % 2 == 0) {
+				for (int j = 0; j < n; j++) {		//arr[0],arr[2]...[n]행 (1,3..째줄 정방향으로 정렬)
+
+					arr[i][j] = a++;
+				}
+			} else {
+				for (int j = n - 1; j >= 0; j--) {	//2,4... 째 줄 역방향으로 정렬
+					arr[i][j] = a++;
+				}
+			}
+		}
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr.length; j++) {
+				System.out.print(arr[i][j] + " ");		// 2차원배열 중첩반복문으로 출력
+			}
 			System.out.println();
 		}
 		sc.close();

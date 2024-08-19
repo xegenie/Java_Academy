@@ -64,12 +64,6 @@ public class Account {
 		this.bank = bank;
 	}
 	
-	// toString
-	@Override
-	public String toString() {
-		return "Account [deposit=" + deposit + ", depositor=" + depositor + ", depoNumber=" + depoNumber + ", bank="
-				+ bank + "]";
-	}
 	
 	
 
