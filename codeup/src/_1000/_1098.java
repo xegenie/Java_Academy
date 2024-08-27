@@ -24,18 +24,18 @@ public class _1098 {
 			x = sc.nextInt();
 			y = sc.nextInt();
 			if (height == 0)
-				for (int j = (y - 1); j < weight; j++) {
-					arr[x][j] = 1;
+				for (int j = (y-1); j < (y+weight-1); j++) {
+					arr[x-1][j] = 1;
 				}
 			if (height == 1)
-				for (int j = (x-1); j < weight; j++) {
-					arr[j][y] = 1;
+				for (int j = (x-1); j < (x+weight-1); j++) {
+					arr[j][y-1] = 1;
 				}
 		}
 		
 		for (int i = 0; i < arr.length; i++) {
 			for (int j = 0; j < arr[i].length; j++) {
-				System.out.print(arr[i][j]);
+				System.out.print(arr[i][j]+" ");
 			}
 			System.out.println();
 		}
