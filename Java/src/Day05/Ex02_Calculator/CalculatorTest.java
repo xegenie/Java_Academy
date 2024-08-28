@@ -30,7 +30,7 @@ public class CalculatorTest {
 		// 곱셈 메소드 호출
 		double result3 = calculator.multiple(x, y);
 		System.out.println("x * y = "+result3);
-		System.out.printf("x * y = %5.2f \n", result3);
+		System.out.printf("x * y =%5.2f\n ",result3);
 		
 		// 나눗셈 메소드 호출
 		double result4 = calculator.divide(x, y);
