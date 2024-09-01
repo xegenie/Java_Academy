@@ -20,7 +20,7 @@ public class StringTokenizerEx {
 		
 		// 토큰 반복하기
 		while (st.hasMoreTokens()) {			// 다음 토큰이 있으면 반복
-			String token = st.nextToken();		// 다음 토큰 가져와서 tokne에 대입
+			String token = st.nextToken();		// 다음 토큰 가져와서 token에 대입
 			System.out.print(token + " ");		// 토큰을 한 칸씩 띄어서 출력
 		}
 		System.out.println();

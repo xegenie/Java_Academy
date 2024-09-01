@@ -126,7 +126,7 @@ public class ComparatorEx {
 		
 		// Collections.sort ( 컬렉션, 정렬기준 객체 );
 		// * 익명구현객체를 사용하여, 이 시점에서 정렬기준 적용 가능
-		Collections.sort(userList2, new java.util.Comparator<User>() {
+		Collections.sort(userList2, new Comparator<User>() {
 			@Override
 			public int compare(User o1, User o2) {
 				//아이디를 기준으로 오름차순

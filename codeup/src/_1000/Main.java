@@ -1,19 +1,19 @@
 package _1000;
 
-import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Main {
-
-	public static void main(String[] args) {
+	
+	public static void main(String[] args)  {
 		Scanner sc = new Scanner(System.in);
-		
 
-		int a = sc.nextInt();
-		int b = sc.nextInt();
-		if (a==1 || b==1)
-			System.out.print("1");
-		else
-			System.out.print("0");
+		String a = sc.nextLine();
+		String[] sp1 = a.split("H");
+		String[] sp2 = sp1[0].split("C");
+//		System.out.println(sp2[1]+" "+sp1[1]);
+		
+		int b = 12*Integer.parseInt(sp2[1])+Integer.parseInt(sp1[1]);
+		System.out.println(b);
 	}
+
 }

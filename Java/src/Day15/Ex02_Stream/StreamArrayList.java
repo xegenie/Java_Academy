@@ -58,7 +58,7 @@ public class StreamArrayList {
 		personList.stream().filter(p -> p.getAge() > 25)
 						   .forEach(p -> System.out.println(p));
 		System.out.println();
-		// * 이름이 3글자 이상인 사람듦나 필터링하여 반복
+		// * 이름이 3글자 이상인 사람들만 필터링하여 반복
 		personList.stream().filter(p -> p.getName().length() >= 3)
 						   .forEach(p -> System.out.println(p));
 		System.out.println();
