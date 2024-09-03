@@ -6,14 +6,19 @@ public class Main {
 	
 	public static void main(String[] args)  {
 		Scanner sc = new Scanner(System.in);
-
-		String a = sc.nextLine();
-		String[] sp1 = a.split("H");
-		String[] sp2 = sp1[0].split("C");
-//		System.out.println(sp2[1]+" "+sp1[1]);
 		
-		int b = 12*Integer.parseInt(sp2[1])+Integer.parseInt(sp1[1]);
-		System.out.println(b);
+		String a = sc.next();
+		
+		int b = Integer.parseInt(a,16);
+		
+		for (int i = 1; i <= 15; i++) {
+			System.out.print(a+"*");
+			System.out.printf("%X",i);
+			int g = b*i;
+			System.out.print("=");
+			System.out.printf("%X\n",g);
+		}
+		
 	}
 
 }
